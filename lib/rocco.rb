@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # **Rocco** is a Ruby port of [Docco][do], the quick-and-dirty,
 # hundred-line-long, literate-programming-style documentation generator.
 #
@@ -50,6 +52,9 @@ require 'mustache'
 # We use `Net::HTTP` to highlight code via <http://pygments.appspot.com>
 require 'net/http'
 
+# We like to know what version of Rocco we're using.
+require 'rocco/version'
+
 # Code is run through [Pygments](http://pygments.org/) for syntax
 # highlighting. If it's not installed, locally, use a webservice.
 include FileTest
@@ -74,7 +79,6 @@ end
 #   to `nil` (that is, Mustache will use `./lib/rocco/layout.mustache`)_.
 #
 class Rocco
-  VERSION = '0.6'
 
   def initialize(filename, sources=[], options={}, &block)
     @file       = filename

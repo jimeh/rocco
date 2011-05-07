@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 #### Rocco Rake Tasks
 #
 # To use the Rocco Rake tasks, require `rocco/tasks` in your `Rakefile`
