@@ -1,5 +1,5 @@
 # encoding: utf-8
 
-class Rocco
-  VERSION = '0.6'
+module Rocco
+  VERSION = '2.0.0'
 end
