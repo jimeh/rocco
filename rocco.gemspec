@@ -21,5 +21,6 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   
   s.add_runtime_dependency 'rdiscount'
-  s.add_runtime_dependency 'mustache'
+  
+  s.add_development_dependency 'rspec'
 end
